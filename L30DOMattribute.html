@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM accessing attributes</title>
+</head>
+<body id="body">
+    <ul id="element" data="valid">
+        <li class="list-item">First Element</li>
+        <li class="list-item">Second Element</li>
+        <li class="list-item">Third Element</li>
+      </ul>
+      <div class="allDivs">First Div</div>
+      <div class="allDivs">Second Div</div>
+      <table>
+          <tr>
+              <td>One</td>
+              <td>Two</td>
+          </tr>
+          <tr>
+              <td>Three</td>
+              <td>Four</td>
+          </tr>
+      </table>
+      <script>
+        console.log(element.id)
+        console.log(element.data)
+        console.log(element.getAttribute("data"))
+        console.log(element.setAttribute("order-placed", "pending"))
+        console.log(element.getAttribute("order-placed"))
+        console.log(element.hasAttribute("order-placed"))
+        console.log(element.removeAttribute("order-placed"))
+        console.log(element.hasAttribute("order-placed"))
+        console.log(element.attributes)
+      </script>
+</body>
+</html>

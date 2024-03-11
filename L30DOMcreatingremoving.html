@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM creating removing node elements</title>
+  </head>
+  <body id="body">
+    
+    <div id="firstDiv" class="allDivs">First Div</div>
+      <div class="allDivs">Second Div</div>
+      <table>
+          <tr>
+              <td>One</td>
+              <td>Two</td>
+          </tr>
+          <tr>
+              <td>Three</td>
+              <td>Four</td>
+          </tr>
+      </table>
+    <script>
+        const newDiv = document.createElement('div')
+        // const newText = document.createTextNode('Lund Mera')
+        // newDiv.textContent = "Hii world"
+        newDiv.innerHTML = `<ul id="element" data="valid">
+      <li class="list-item">First Element</li>
+      <li class="list-item">Second Element</li>
+      <li class="list-item">Third Element</li>
+    </ul>`
+        // newDiv.appendChild(newText)
+        body.append(newDiv)
+        // body.prepend(newDiv)
+        // body.before(newDiv)
+        // body.after(newDiv)
+        // firstDiv.replaceWith(newDiv)
+        // firstDiv.remove()
+        
+    </script>
+  </body>
+</html>

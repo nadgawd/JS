@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation using id and class</title>
+</head>
+<body>
+    <ul id="element">
+        <li class="list-item">First Element</li>
+        <li class="list-item">Second Element</li>
+        <li class="list-item">Third Element</li>
+      </ul>
+      <div class="allDivs">First Div</div>
+      <script>
+        const allDivs = document.getElementsByClassName("allDivs")
+        const allDivs1 = document.querySelectorAll(".allDivs")
+        console.log(allDivs)
+        console.log(allDivs1)
+      </script>
+      <div class="allDivs">Second Div</div>
+      <table>
+          <tr>
+              <td>One</td>
+              <td>Two</td>
+          </tr>
+          <tr>
+              <td>Three</td>
+              <td>Four</td>
+          </tr>
+      </table>
+      <script>
+        // //ID Search
+        // element.style.background='teal'
+        // const ulTag = document.getElementById("element")
+        // ulTag.style.backgroundColor = 'cyan'
+        // console.log()
+
+
+        // // //Class Search
+        // listItem = document.getElementsByClassName("list-item")
+        // console.log(listItem)
+
+        // document.getElementsByName()
+        // console.log(document.getElementsByTagName("table"))
+
+
+        // //Query Selector
+        // const listItems = document.querySelector('.list-item')
+        // console.log(listItems)
+        // const listItems1 = document.querySelectorAll('.list-item')
+        // console.log(listItems1)
+        // const listItems2 = document.querySelectorAll('ul> li:last-child')
+        // console.log(listItems2[0].textContent)
+        // const listItems3 = document.querySelectorAll('ul> li:nth-child(2)')
+        // console.log(listItems3[0].textContent)
+
+        console.log(allDivs)
+        console.log(allDivs1)
+      </script>
+</body>
+</html>

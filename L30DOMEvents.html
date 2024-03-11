@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+</head>
+<body>
+    <button id="clickBtn" onclick="alert('Hii Bitches')">
+        Click Me
+    </button>
+    <script>
+        //Events
+        // function callMe(){
+        //     console.log(this)
+        //     alert('Send Nudes')
+        // }
+        // // clickBtn.onclick = callMe()       //function call
+        // // clickBtn.onclick = callMe            //function pass
+
+        // clickBtn.addEventListener('click', callMe)
+        // clickBtn.addEventListener('click', function(){
+        //     alert("Let's sleep")
+        // })
+        // // clickBtn.removeEventListener('click', callMe)
+
+
+
+        function callMe(event){
+            console.log(event.type)
+            console.log(event.currentTarget)
+            console.log(event.clientY)
+            console.log(event.clientX)
+            alert('Send Nudes')
+        }
+        clickBtn.addEventListener('click', callMe)
+
+    </script>
+</body>
+</html>
